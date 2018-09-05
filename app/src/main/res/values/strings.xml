@@ -1,4 +1,31 @@
-<resources>
-    <string name="app_name">TestRemoteDemo</string>
-    <string name="action_settings">Settings</string>
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright 2014 Google Inc. All Rights Reserved. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Remote Demos</string>
+
+    <!-- PAIRING -->
+    <string name="pairing_preparing">Preparing to pair</string>
+    <string name="pairing_explanation">Please enter CODE</string>
+    <string name="pairing_pin_hint">0000</string>
+    <string name="pairing_pair">Pair</string>
+    <string name="pairing_cancel">Cancel</string>
+
+    <!-- No Wifi error strings -->
+    <string name="action_enable_wifi">Turn on Wi&#8209;Fi</string>
+    <string name="action_connect_wifi">Connect to Wi&#8209;Fi</string>
+    <string name="content_desc_wifi_not_connected">Wi&#8209;Fi not connected</string>
+
+    <!-- No Devices error strings -->
+    <string name="searching_for_devices_ethernet">Ethernet</string>
+    <string name="searching_for_devices_unknown_wifi">Unknown Network</string>
+    <string name="searching_for_devices_on_network">Searching for Android TV on <xliff:g example="GoogleGuest" id="network">%1$s</xliff:g>&#8230;</string>
+    <string name="searching_for_devices_on_network_and_bluetooth">Searching for Android TV on <xliff:g example="GoogleGuest" id="network">%1$s</xliff:g> and Bluetooth&#8230;</string>
+    <string name="searching_for_devices_on_bluetooth">Searching for Android TV via Bluetooth&#8230;</string>
+    <string name="searching_for_devices_bluetooth_off_hint">If your Android TV is not connected to any Wi&#8209;Fi network, try turning on this device\'s Bluetooth.</string>
+    <string name="searching_for_devices_wifi_off_hint">Alternatively, you can connect Android TV and this device to the same Wi&#8209;Fi or Ethernet.</string>
+    <string name="searching_for_devices_hint">Make sure the Android TV is in the same Wi&#8209;Fi or Ethernet network.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

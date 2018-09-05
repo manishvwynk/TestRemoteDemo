@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2014 Google Inc. All Rights Reserved. -->
+<resources>
+
+    <dimen name="hublist_padding_on_top">32dp</dimen>
+    <dimen name="hublist_item_text_padding">16dp</dimen>
+    <dimen name="hublist_item_icon_width">24dp</dimen>
+    <dimen name="hublist_item_icon_height">24dp</dimen>
+    <dimen name="hublist_item_icon_margin_end">32dp</dimen>
+    <dimen name="hublist_item_height">112dp</dimen>
+    <dimen name="hublist_separator_height">1dp</dimen>
+    <dimen name="hublist_error_center_padding">48dp</dimen>
+    <dimen name="hublist_center_icon_dim">64dp</dimen>
+    <dimen name="hublist_error_text_width">250dp</dimen>
+    <dimen name="hublist_button_text_size">18sp</dimen>
+    <dimen name="hublist_description_text_size">16sp</dimen>
+    <dimen name="hublist_no_devices_error_progress_size">78dp</dimen>
+    <dimen name="hublist_no_devices_error_status_bottom_margin">190dp</dimen>
+    <dimen name="hublist_no_devices_error_status_top_margin">38dp</dimen>
+    <dimen name="hublist_no_devices_error_message_bottom_margin">28dp</dimen>
+    <dimen name="hublist_no_wifi_error_icon_size">141dp</dimen>
+    <dimen name="hublist_no_wifi_error_button_bottom_margin">184dp</dimen>
+    <dimen name="hublist_no_wifi_error_button_top_margin">28dp</dimen>
+    <dimen name="hublist_no_wifi_error_message_bottom_margin">28dp</dimen>
+    <dimen name="pairing_vertical_margin">28dp</dimen>
+    <dimen name="pairing_button_spacing">20dp</dimen>
+    <dimen name="pairing_edit_text_size">80dp</dimen>
+    <dimen name="remote_button_height">48dp</dimen>
+    <dimen name="remote_button_horizontal_padding">14dp</dimen>
+    <dimen name="pairing_pin_underline_width">234dp</dimen>
+    <dimen name="pairing_pin_underline_height">1dp</dimen>
+
+    <item name="hublist_line_spacing_multiplier" format="float" type="dimen">1.31556</item>
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2014 Google Inc. All Rights Reserved. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true" >
+
+    <!-- Errors to be displayed if the ListView can not be populated. -->
+
+    <RelativeLayout
+        android:id="@+id/no_wifi_error_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/no_wifi_error_hint"
+            style="@style/HubListMessageTextAppearance.Dim"
+            android:layout_width="@dimen/hublist_error_text_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/hublist_no_wifi_error_message_bottom_margin"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/no_wifi_error_button"
+            style="@style/HubListButtonTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/remote_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/hublist_no_wifi_error_button_bottom_margin"
+            android:layout_marginTop="@dimen/hublist_no_wifi_error_button_top_margin"
+            android:background="@drawable/button_background"
+            android:paddingStart="@dimen/remote_button_horizontal_padding"
+            android:paddingEnd="@dimen/remote_button_horizontal_padding"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/no_wifi_error_icon"
+            android:layout_width="@dimen/hublist_no_wifi_error_icon_size"
+            android:layout_height="@dimen/hublist_no_wifi_error_icon_size"
+            android:layout_above="@id/no_wifi_error_button"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/content_desc_wifi_not_connected"
+            android:src="@drawable/ic_bg_not_connected" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/no_devices_error_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/no_devices_error_hint"
+            style="@style/HubListMessageTextAppearance.Dim"
+            android:layout_width="@dimen/hublist_error_text_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/hublist_no_devices_error_message_bottom_margin"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/no_devices_error_status"
+            style="@style/HubListMessageTextAppearance"
+            android:layout_width="@dimen/hublist_error_text_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/hublist_no_devices_error_status_bottom_margin"
+            android:layout_marginTop="@dimen/hublist_no_devices_error_status_top_margin"
+            android:gravity="center" />
+
+        <ProgressBar
+            android:id="@+id/no_devices_progress"
+            android:layout_width="@dimen/hublist_no_devices_error_progress_size"
+            android:layout_height="@dimen/hublist_no_devices_error_progress_size"
+            android:layout_above="@id/no_devices_error_status"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <!-- List of hubs to be displayed! -->
+
+    <ListView
+        android:id="@+id/hubs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:scrollbars="none" />
+
+</FrameLayout>

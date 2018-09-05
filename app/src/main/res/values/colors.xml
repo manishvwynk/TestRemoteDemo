@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2014 Google Inc. All Rights Reserved. -->
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary">#F50057</color>
+    <color name="background_regular">#ffffff</color>
+    <color name="app_blue_retro">#5533FF</color>
+    <color name="list_item_hub_separator_color">#1AE0E0E0</color>
+    <color name="hublist_error_message_text_color">#99FFFFFF</color>
+    <color name="hublist_text_color">#000000</color>
+    <color name="hublist_button_text_color">@color/blue_grey_800</color>
+    <color name="pairing_label_text_color">#99FFFFFF</color>
+    <color name="primary_remote_color">#80cbc4</color>
+    <color name="blue_grey_800">#37474F</color>
+    <color name="ripple_color">#4dffffff</color>
+
 </resources>

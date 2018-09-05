@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2014 Google Inc. All Rights Reserved. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pairing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pairing_text"
+        style="@style/HubListMessageTextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/pairing_vertical_margin"
+        android:text="@string/pairing_explanation"
+        android:textColor="@color/pairing_label_text_color" />
+
+    <EditText
+        android:id="@+id/pairing_pin"
+        style="@style/PairingEditTextAppearance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pairing_text"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/pairing_pin_hint" >
+
+        <requestFocus />
+    </EditText>
+
+    <View
+        android:id="@+id/edit_line"
+        android:layout_width="@dimen/pairing_pin_underline_width"
+        android:layout_height="@dimen/pairing_pin_underline_height"
+        android:layout_below="@+id/pairing_pin"
+        android:layout_centerHorizontal="true"
+        android:background="@color/primary_remote_color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/pairing_vertical_margin"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/pairing_cancel"
+            style="@style/HubListButtonTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/remote_button_height"
+            android:layout_marginEnd="@dimen/pairing_button_spacing"
+            android:background="@drawable/inverted_button_background"
+            android:paddingStart="@dimen/remote_button_horizontal_padding"
+            android:paddingEnd="@dimen/remote_button_horizontal_padding"
+            android:singleLine="true"
+            android:text="@string/pairing_cancel"
+            android:textColor="@color/primary_remote_color" />
+
+        <Button
+            android:id="@+id/pairing_ok"
+            style="@style/HubListButtonTextAppearance"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/remote_button_height"
+            android:background="@drawable/button_background"
+            android:paddingStart="@dimen/remote_button_horizontal_padding"
+            android:paddingEnd="@dimen/remote_button_horizontal_padding"
+            android:singleLine="true"
+            android:text="@string/pairing_pair" />
+    </LinearLayout>
+
+</RelativeLayout>

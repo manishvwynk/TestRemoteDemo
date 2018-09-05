@@ -1,20 +1,80 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2014 Google Inc. All Rights Reserved. -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/background_regular</item>
+        <item name="colorAccent">@color/app_blue_retro</item>
+    </style>
+    <style name="TextAppearance">
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="TextAppearance.Huge" parent="TextAppearance">
+        <item name="android:textSize">30sp</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="TextAppearance.Large" parent="TextAppearance">
+        <item name="android:textSize">22sp</item>
+    </style>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="TextAppearance.Medium" parent="TextAppearance">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.Small" parent="TextAppearance">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.Tiny" parent="TextAppearance">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.VeryTiny" parent="TextAppearance">
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="TextAppearance.Default" parent="TextAppearance.Medium" />
+
+    <style name="OverlayText" parent="TextAppearance.Large">
+        <item name="android:textColor">#CCCCCC</item>
+    </style>
+
+    <style name="HubTextAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/hublist_button_text_size</item>
+        <item name="android:textColor">@color/hublist_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="HubListMessageTextAppearance">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:lineSpacingMultiplier">@dimen/hublist_line_spacing_multiplier</item>
+        <item name="android:textColor">@color/hublist_text_color</item>
+        <item name="android:textSize">@dimen/hublist_description_text_size</item>
+    </style>
+
+    <style name="HubListMessageTextAppearance.Dim">
+        <item name="android:textColor">@color/hublist_error_message_text_color</item>
+    </style>
+
+    <style name="HubListButtonTextAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/hublist_button_text_size</item>
+        <item name="android:textColor">@color/hublist_button_text_color</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="PairingEditTextAppearance">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:inputType">textVisiblePassword</item>
+        <item name="android:maxLength">4</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">#FFEEEEEE</item>
+        <item name="android:textColorHint">#80EEEEEE</item>
+        <item name="android:textSize">@dimen/pairing_edit_text_size</item>
+    </style>
 
 </resources>
