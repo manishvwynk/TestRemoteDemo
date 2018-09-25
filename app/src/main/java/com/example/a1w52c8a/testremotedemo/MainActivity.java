@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements DeviceListFragmen
 
     @Override
     public void onPairingCompleted(String s) {
-        Log.i(TAG," onPairingCompleted ");
+        Log.i(TAG," onPairingCompleted :"+s);
         device.setPairingSecret(s);
     }
 
@@ -102,12 +102,13 @@ public class MainActivity extends AppCompatActivity implements DeviceListFragmen
 
     @Override
     public void sendAudioCommand() {
+        device.startVoice();
 
     }
 
     @Override
     public void stopAudioCommand() {
-
+        device.stopVoice();
     }
 
 
